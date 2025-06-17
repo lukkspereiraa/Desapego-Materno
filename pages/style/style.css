@@ -27,6 +27,11 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
 @keyframes float {
   0%,
   100% {
@@ -61,7 +66,7 @@ body {
 
 .btn.google {
   background-color: #d6cdea;
-  color: #3a3a3a;
+  color: #8b5fbf;
 }
 
 .btn.outline {
@@ -87,8 +92,5 @@ body {
 
   .logo {
     width: 40vw;
-  
   }
-
-
 }
