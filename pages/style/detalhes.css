@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #ffffff;
+    padding-bottom: 90px; /* Espaço para os botões de ação */
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.back-button, .share-icon {
+    font-size: 20px;
+    color: #8B5FBF;
+    text-decoration: none;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Conteúdo */
+.container {
+    padding: 16px;
+}
+
+/* Galeria de Imagens */
+.image-gallery .main-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.thumbnail-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail.active {
+    border-color: #8B5FBF;
+}
+
+/* Detalhes do Produto */
+.product-details {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #8B5FBF;
+    margin: 0 0 16px 0;
+}
+
+.product-specs {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.product-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Informações da Vendedora */
+.seller-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 0;
+}
+
+.seller-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.seller-details {
+    flex-grow: 1;
+}
+
+.seller-name {
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+
+.seller-rating {
+    font-size: 14px;
+    color: #f1c40f;
+}
+
+.seller-rating span {
+    color: #888;
+    margin-left: 4px;
+}
+
+.view-profile-btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8B5FBF;
+    text-decoration: none;
+}
+
+/* Rodapé com Botões */
+.action-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+}
+
+.favorite-btn {
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 1.5px solid #D6CDEA;
+    background-color: #fff;
+    color: #8B5FBF;
+    cursor: pointer;
+}
+
+.chat-btn {
+    flex-grow: 1;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    background-color: #8B5FBF;
+    color: white;
+    cursor: pointer;
+}
