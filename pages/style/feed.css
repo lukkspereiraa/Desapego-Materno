@@ -7,7 +7,6 @@ body {
     padding-bottom: 80px; /* Espaço para o menu de navegação inferior */
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     align-items: center;
@@ -33,12 +32,10 @@ body {
     color: #8B5FBF;
 }
 
-/* Conteúdo Principal */
 .container {
     padding: 16px;
 }
 
-/* Barra de Busca */
 .search-wrapper {
     position: relative;
     margin-bottom: 24px;
@@ -46,7 +43,7 @@ body {
 
 .search-bar {
     width: 100%;
-    padding: 14px 14px 14px 40px; /* Espaço para o ícone */
+    padding: 14px 14px 14px 40px; 
     border-radius: 12px;
     border: 1.5px solid #D6CDEA;
     font-size: 15px;
@@ -65,12 +62,11 @@ body {
     color: #aaa;
 }
 
-/* Filtros */
 .filters {
     display: flex;
     gap: 12px;
     margin-bottom: 24px;
-    overflow-x: auto; /* Permite rolar os filtros se não couberem */
+    overflow-x: auto; 
 }
 
 .filter-btn {
@@ -91,7 +87,6 @@ body {
     border-color: #8B5FBF;
 }
 
-/* Grid de Produtos */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -141,7 +136,6 @@ body {
     margin: 0;
 }
 
-/* Menu de Navegação Inferior */
 .bottom-nav {
     position: fixed;
     bottom: 0;

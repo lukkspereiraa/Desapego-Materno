@@ -14,13 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Funcionalidade do Botão de Favoritar ---
   const favoriteBtn = document.querySelector(".favorite-btn");
 
   favoriteBtn.addEventListener("click", () => {
     const heartIcon = favoriteBtn.querySelector("i");
 
-    // Alterna entre o ícone de coração vazio (far) e cheio (fas)
     if (heartIcon.classList.contains("far")) {
       heartIcon.classList.remove("far");
       heartIcon.classList.add("fas");
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
   const chatBtn = document.querySelector(".chat-btn");
   chatBtn.addEventListener("click", () => {
-      // ALTERAÇÃO: Redireciona para o chat
       window.location.href = 'chat.html';
   });
 

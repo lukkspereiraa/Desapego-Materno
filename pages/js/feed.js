@@ -10,10 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const productCards = document.querySelectorAll(".product-card");
   productCards.forEach(card => {
     card.addEventListener("click", () => {
-      // ALTERAÇÃO: Redireciona para a página de detalhes
       window.location.href = 'detalhes.html';
     });
   });
-  
-  // O restante do JS pode ser removido pois a navegação agora é feita pelo HTML
 });

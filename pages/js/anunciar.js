@@ -15,14 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Impede o envio real do formulário e mostra um alerta
     itemForm.addEventListener("submit", (event) => {
-        event.preventDefault(); // Previne o recarregamento da página
+        event.preventDefault(); 
 
         alert("Anúncio publicado com sucesso! (Simulação)");
 
-        // Limpa o formulário para um novo cadastro
         itemForm.reset();
-        priceInput.disabled = false; // Garante que o campo de preço seja reativado
+        priceInput.disabled = false; 
     });
 });

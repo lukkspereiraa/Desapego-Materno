@@ -6,7 +6,6 @@ body {
     background: #f9f9f9;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     align-items: center;
@@ -26,7 +25,6 @@ body {
     margin: 0;
 }
 
-/* Sumário do Perfil */
 .container {
     padding: 16px;
 }
@@ -71,7 +69,6 @@ body {
     cursor: pointer;
 }
 
-/* Abas */
 .profile-tabs {
     display: flex;
     justify-content: space-around;
@@ -93,7 +90,6 @@ body {
     border-bottom-color: #8B5FBF;
 }
 
-/* Conteúdo das Abas */
 .tab-content {
     display: none;
 }
@@ -101,7 +97,6 @@ body {
     display: block;
 }
 
-/* Grid de Produtos (reutilizando do feed.css) */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -133,7 +128,6 @@ body {
     margin: 0;
 }
 
-/* Menu de Navegação Inferior (reutilizando do feed.css) */
 .bottom-nav {
     position: fixed;
     bottom: 0;

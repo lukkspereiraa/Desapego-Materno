@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginForm.addEventListener("submit", (event) => {
         event.preventDefault();
-        alert("Login efetuado com sucesso! Redirecionando para o feed...");
-        // ALTERAÇÃO: Redireciona para o feed
+        alert("Login efetuado com sucesso! Redirecionando para o feed...")
         window.location.href = 'feed.html'; 
     });
 });

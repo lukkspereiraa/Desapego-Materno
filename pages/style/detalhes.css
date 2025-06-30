@@ -7,7 +7,6 @@ body {
     padding-bottom: 90px; /* Espaço para os botões de ação */
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     align-items: center;
@@ -33,12 +32,10 @@ body {
     margin: 0;
 }
 
-/* Conteúdo */
 .container {
     padding: 16px;
 }
 
-/* Galeria de Imagens */
 .image-gallery .main-image {
     width: 100%;
     border-radius: 12px;
@@ -63,7 +60,6 @@ body {
     border-color: #8B5FBF;
 }
 
-/* Detalhes do Produto */
 .product-details {
     margin-top: 24px;
     padding-bottom: 24px;
@@ -98,7 +94,6 @@ body {
     color: #555;
 }
 
-/* Informações da Vendedora */
 .seller-info {
     display: flex;
     align-items: center;
@@ -138,7 +133,6 @@ body {
     text-decoration: none;
 }
 
-/* Rodapé com Botões */
 .action-footer {
     position: fixed;
     bottom: 0;

@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", function (event) {
     event.preventDefault(); 
-    // ... (sua lógica de validação continua aqui) ...
+
     alert("Cadastro realizado com sucesso! Você será redirecionado para o login.");
-    // ALTERAÇÃO: Redireciona para o login
+
     window.location.href = 'login.html'; 
   });
 });

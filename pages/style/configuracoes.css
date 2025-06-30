@@ -6,7 +6,6 @@ body {
     background: #f9f9f9;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     align-items: center;
@@ -29,7 +28,6 @@ body {
     margin: 0;
 }
 
-/* Lista de Configurações */
 .container {
     padding-top: 24px;
 }

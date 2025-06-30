@@ -9,7 +9,6 @@ body {
     height: 100vh;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     align-items: center;
@@ -95,7 +94,6 @@ body {
     color: #666;
 }
 
-/* Rodapé/Compositor de Mensagem */
 .message-composer {
     display: flex;
     align-items: center;

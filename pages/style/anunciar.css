@@ -6,7 +6,6 @@ body {
     background: #f9f9f9;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     align-items: center;
@@ -29,7 +28,6 @@ body {
     margin: 0;
 }
 
-/* Formulário */
 .container {
     padding: 16px;
 }
@@ -70,7 +68,6 @@ body {
     border-color: #8B5FBF;
 }
 
-/* Upload de Fotos */
 .photo-upload-wrapper {
     display: flex;
     gap: 10px;
@@ -100,7 +97,6 @@ body {
     text-align: center;
 }
 
-/* Opção de item gratuito */
 .free-option {
     display: flex;
     align-items: center;
@@ -113,7 +109,6 @@ body {
     color: #555;
 }
 
-/* Botão de Publicar */
 .submit-btn {
     width: 100%;
     padding: 14px;
