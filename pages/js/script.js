@@ -1,8 +1,11 @@
-function entrarEmail() {
-  alert("Redirecionando para login com e-mail...");
-  // Aqui você poderia redirecionar para uma tela de login com formulário
-  // window.location.href = 'login-email.html';
-}
+// SUBSTITUA TODO O CONTEÚDO DE script.js POR ISTO:
+document.addEventListener("DOMContentLoaded", () => {
+    const loginEmailBtn = document.querySelector(".login-btn-email");
+
+    loginEmailBtn.addEventListener("click", () => {
+        window.location.href = 'login.html';
+    });
+});
 
 function entrarGoogle() {
   alert("Iniciando login com Google...");
@@ -10,6 +13,6 @@ function entrarGoogle() {
 }
 
 function cadastrar() {
-  alert("Redirecionando para cadastro...");
-  // window.location.href = 'cadastro.html';
+  // Esta função está no botão de cadastro no HTML, então mantemos
+  window.location.href = 'cadastro.html';
 }
