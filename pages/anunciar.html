@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anunciar Item - Desapego Materno</title>
+    <link rel="stylesheet" href="./style/anunciar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="feed.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="header-title">Anunciar Novo Item</h1>
+    </header>
+
+    <main class="container">
+        <form id="item-form" class="form">
+            <div class="input-group">
+                <label>Fotos do item (até 5)</label>
+                <div class="photo-upload-wrapper">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <span>Adicionar Foto</span>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="input-group">
+                <label for="item-name">Nome do item</label>
+                <input type="text" id="item-name" placeholder="Ex: Macacão Carter's" required>
+            </div>
+
+            <div class="input-group">
+                <label for="item-category">Categoria</label>
+                <select id="item-category" required>
+                    <option value="" disabled selected>Selecione uma categoria</option>
+                    <option value="roupas">Roupas</option>
+                    <option value="brinquedos">Brinquedos</option>
+                    <option value="acessorios">Acessórios</option>
+                    <option value="calcados">Calçados</option>
+                    <option value="moveis">Móveis</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="item-condition">Condição do item</label>
+                <select id="item-condition" required>
+                    <option value="" disabled selected>Selecione a condição</option>
+                    <option value="novo">Novo (com etiqueta)</option>
+                    <option value="usado-novo">Usado (estado de novo)</option>
+                    <option value="usado-bom">Usado (bom estado)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="item-description">Descrição</label>
+                <textarea id="item-description" rows="4" placeholder="Descreva os detalhes do item, como marca, cor, tamanho, etc."></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="item-price">Preço (R$)</label>
+                <input type="number" id="item-price" placeholder="25,00" required>
+                 <div class="free-option">
+                    <input type="checkbox" id="is-free">
+                    <label for="is-free">Marcar como troca/doação gratuita</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Publicar Anúncio</button>
+        </form>
+    </main>
+
+    <script src="./js/anunciar.js"></script>
+</body>
+</html>

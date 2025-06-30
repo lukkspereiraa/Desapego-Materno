@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #f9f9f9;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.back-button {
+    font-size: 20px;
+    color: #8B5FBF;
+    text-decoration: none;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Lista de Configurações */
+.container {
+    padding-top: 24px;
+}
+
+.settings-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.settings-item:hover {
+    background-color: #fafafa;
+}
+
+.settings-item .icon {
+    font-size: 20px;
+    color: #8B5FBF;
+    width: 30px;
+    margin-right: 16px;
+}
+
+.settings-item .item-text {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.settings-item .arrow {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.settings-item.danger .icon,
+.settings-item.danger .item-text {
+    color: #e74c3c;
+}

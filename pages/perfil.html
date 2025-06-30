@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Desapego Materno</title>
+    <link rel="stylesheet" href="./style/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="feed.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="header-title">Meu Perfil</h1>
+        <a href="#" class="settings-button"><i class="fas fa-cog"></i></a>
+    </header>
+
+    <main class="container">
+        <section class="profile-summary">
+            <img src="https://i.pravatar.cc/100" alt="Foto da usuária" class="profile-avatar">
+            <h2 class="profile-name">Juliana Santos</h2>
+            <div class="profile-rating">
+                <i class="fas fa-star"></i> 4.8 (15 avaliações)
+            </div>
+            <button class="edit-profile-btn">Editar Perfil</button>
+        </section>
+
+        <nav class="profile-tabs">
+            <button class="tab-link active" data-tab="anuncios">Meus Anúncios</button>
+            <button class="tab-link" data-tab="favoritos">Favoritos</button>
+        </nav>
+
+        <div id="anuncios" class="tab-content active">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Produto" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Cadeirinha de Carro</h3>
+                        <p class="product-price">R$ 180,00</p>
+                    </div>
+                </div>
+                 <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Produto" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Tênis Infantil</h3>
+                        <p class="product-price">R$ 30,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="favoritos" class="tab-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Produto" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Kit Body Manga Curta</h3>
+                        <p class="product-price">R$ 45,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="feed.html" class="nav-item"><i class="fas fa-home"></i><span>Início</span></a>
+        <a href="anunciar.html" class="nav-item"><i class="fas fa-plus-circle"></i><span>Anunciar</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-heart"></i><span>Favoritos</span></a>
+        <a href="perfil.html" class="nav-item active"><i class="fas fa-user"></i><span>Perfil</span></a>
+    </nav>
+
+    <script src="./js/perfil.js"></script>
+</body>
+</html>

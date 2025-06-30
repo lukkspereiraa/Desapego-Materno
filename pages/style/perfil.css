@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+body {
+    margin: 0 0 80px 0; /* Espaço para o menu inferior */
+    font-family: 'Nunito', sans-serif;
+    background: #f9f9f9;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #ffffff;
+}
+.back-button, .settings-button {
+    font-size: 20px;
+    color: #8B5FBF;
+    text-decoration: none;
+}
+.header-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Sumário do Perfil */
+.container {
+    padding: 16px;
+}
+
+.profile-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #8B5FBF;
+    margin-bottom: 12px;
+}
+.profile-name {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+.profile-rating {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 16px;
+}
+.profile-rating .fa-star {
+    color: #f1c40f;
+}
+.edit-profile-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1.5px solid #8B5FBF;
+    background-color: transparent;
+    color: #8B5FBF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Abas */
+.profile-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.tab-link {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+.tab-link.active {
+    color: #8B5FBF;
+    border-bottom-color: #8B5FBF;
+}
+
+/* Conteúdo das Abas */
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+
+/* Grid de Produtos (reutilizando do feed.css) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+.product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.product-info {
+    padding: 12px;
+}
+.product-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+}
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8B5FBF;
+    margin: 0;
+}
+
+/* Menu de Navegação Inferior (reutilizando do feed.css) */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+    gap: 4px;
+}
+.nav-item .fas {
+    font-size: 20px;
+}
+.nav-item.active {
+    color: #8B5FBF;
+}

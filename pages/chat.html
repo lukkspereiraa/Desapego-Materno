@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Desapego Materno</title>
+    <link rel="stylesheet" href="./style/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="detalhes.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+        <img src="https://i.pravatar.cc/40" alt="Avatar" class="seller-avatar">
+        <div class="header-info">
+            <h1 class="seller-name">Maria Silva</h1>
+            <p class="product-context">Sobre: Kit Body Manga Curta</p>
+        </div>
+        <i class="fas fa-ellipsis-v options-icon"></i>
+    </header>
+
+    <main class="chat-window">
+        <div class="message received">
+            <p>Olá! Tenho interesse no kit de bodies. Ele ainda está disponível?</p>
+            <span class="timestamp">10:30</span>
+        </div>
+
+        <div class="message sent">
+            <p>Olá! Sim, ainda está disponível 😊</p>
+            <span class="timestamp">10:31</span>
+        </div>
+        
+        </main>
+
+    <footer class="message-composer">
+        <i class="fas fa-paperclip attach-icon"></i>
+        <input type="text" id="message-input" placeholder="Digite uma mensagem...">
+        <button id="send-btn" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+    </footer>
+
+    <script src="./js/chat.js"></script>
+</body>
+</html>

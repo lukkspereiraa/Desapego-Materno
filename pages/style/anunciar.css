@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #f9f9f9;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.back-button {
+    font-size: 20px;
+    color: #8B5FBF;
+    text-decoration: none;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Formulário */
+.container {
+    padding: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #555;
+    display: block;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #D6CDEA;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+    border-color: #8B5FBF;
+}
+
+/* Upload de Fotos */
+.photo-upload-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.photo-placeholder {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #D6CDEA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #8B5FBF;
+}
+
+.photo-placeholder i {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.photo-placeholder span {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Opção de item gratuito */
+.free-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+.free-option label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+}
+
+/* Botão de Publicar */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    background-color: #8B5FBF;
+    color: white;
+    cursor: pointer;
+    margin-top: 16px;
+}
