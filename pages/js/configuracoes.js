@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const confirmed = confirm("Tem certeza que deseja sair da sua conta?");
         if (confirmed) {
             alert("Saindo da conta...");
-            // No futuro, redirecionaria para a tela de login
-            // window.location.href = 'index.html';
+    
+            window.location.href = 'index.html';
         }
     });
 });

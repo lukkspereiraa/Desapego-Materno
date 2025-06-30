@@ -124,3 +124,25 @@ body {
 .icon {
   font-size: 18px;
 }
+
+
+.back-button {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 20px;
+    color: #8B5FBF;
+    text-decoration: none;
+}
+
+.login-link {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link a {
+    color: #8B5FBF;
+    font-weight: 600;
+    text-decoration: none;
+}

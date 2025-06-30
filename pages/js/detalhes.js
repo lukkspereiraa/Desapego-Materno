@@ -43,4 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // Futuramente: window.location.href = 'chat.html?userId=ID_DA_VENDEDORA';
   });
 
+  
+
 });
+  const chatBtn = document.querySelector(".chat-btn");
+  chatBtn.addEventListener("click", () => {
+      // ALTERAÇÃO: Redireciona para o chat
+      window.location.href = 'chat.html';
+  });
+
+
