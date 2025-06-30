@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed - Desapego Materno</title>
+    <link rel="stylesheet" href="./style/feed.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <header class="header">
+        <img src="../imgs/logo.png" alt="Logo" class="header-logo" />
+        <h1 class="header-title">Desapego Materno</h1>
+        <i class="fas fa-bell notification-icon"></i>
+    </header>
+
+    <main class="container">
+        <div class="search-wrapper">
+            <input type="text" class="search-bar" placeholder="Buscar por 'berço', 'carrinho'..." />
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Roupas</button>
+            <button class="filter-btn">Brinquedos</button>
+            <button class="filter-btn">Acessórios</button>
+        </div>
+
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Produto" class="product-image" />
+                <div class="product-info">
+                    <h3 class="product-name">Kit Body Manga Curta</h3>
+                    <p class="product-price">R$ 45,00</p>
+                    <p class="product-location">Fortaleza / Aldeota</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Produto" class="product-image" />
+                <div class="product-info">
+                    <h3 class="product-name">Carrinho de Bebê</h3>
+                    <p class="product-price">R$ 250,00</p>
+                    <p class="product-location">Maracanaú / Centro</p>
+                </div>
+            </div>
+            
+            </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active"><i class="fas fa-home"></i><span>Início</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-plus-circle"></i><span>Anunciar</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-heart"></i><span>Favoritos</span></a>
+        <a href="#" class="nav-item"><i class="fas fa-user"></i><span>Perfil</span></a>
+    </nav>
+
+    <script src="./js/feed.js"></script> </body>
+</body>
+</html>

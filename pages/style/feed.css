@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #f9f9f9;
+    padding-bottom: 80px; /* Espaço para o menu de navegação inferior */
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-logo {
+    width: 40px;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #8B5FBF;
+    margin: 0;
+}
+
+.notification-icon {
+    font-size: 20px;
+    color: #8B5FBF;
+}
+
+/* Conteúdo Principal */
+.container {
+    padding: 16px;
+}
+
+/* Barra de Busca */
+.search-wrapper {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 14px 14px 14px 40px; /* Espaço para o ícone */
+    border-radius: 12px;
+    border: 1.5px solid #D6CDEA;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.search-bar:focus {
+    border-color: #8B5FBF;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    overflow-x: auto; /* Permite rolar os filtros se não couberem */
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1.5px solid #D6CDEA;
+    background-color: transparent;
+    color: #8B5FBF;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #8B5FBF;
+    color: white;
+    border-color: #8B5FBF;
+}
+
+/* Grid de Produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 12px;
+}
+
+.product-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 4px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8B5FBF;
+    margin: 0 0 8px 0;
+}
+
+.product-location {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+/* Menu de Navegação Inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+    gap: 4px;
+}
+
+.nav-item .fas {
+    font-size: 20px;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: #8B5FBF;
+}
