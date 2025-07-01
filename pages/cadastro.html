@@ -10,7 +10,6 @@
 <body>
   <div class="container">
     <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
-
     <div class="logo-wrapper">
       <img src="../imgs/logo.png" alt="Logo" class="logo" />
     </div>
@@ -22,19 +21,23 @@
         <label for="nome">Nome completo</label>
         <input type="text" id="nome" placeholder="Seu nome" required />
       </div>
+
       <div class="input-group">
         <label for="email">E-mail</label>
         <input type="email" id="email" placeholder="email@exemplo.com" required />
       </div>
+
       <div class="input-group password-wrapper">
         <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Crie uma senha" required />
-        <i class="fas fa-eye-slash toggle-password"></i>
+        <input type="password" id="senha" placeholder="No mínimo 6 caracteres" required />
+        <i class="fas fa-eye-slash toggle-password" id="toggle-password-icon"></i>
       </div>
+
       <div class="input-group">
         <label for="cidade">Cidade / Bairro</label>
         <input type="text" id="cidade" placeholder="Ex: Fortaleza / Aldeota" required />
       </div>
+
       <div class="input-group">
         <label for="gestacao">Idade gestacional <span class="optional">(opcional)</span></label>
         <input type="text" id="gestacao" placeholder="Ex: 22 semanas" />
@@ -44,9 +47,35 @@
         <i class="fas fa-user-plus icon"></i> Cadastrar
       </button>
     </form>
-
+    
     <p class="login-link">Já tem uma conta? <a href="login.html">Faça Login</a></p>
   </div>
-  <script src="./js/cadastro.js"></script>
+
+  <script type="module" src="./js/cadastro.js"></script>
+
+  <div class="modal-overlay" id="success-modal">
+      <div class="modal-content">
+        <i class="fas fa-check-circle success-icon"></i>
+        <h2>Conta Criada!</h2>
+        <p>Seu cadastro foi realizado com sucesso. Você será redirecionado em breve.</p>
+      </div>
+    </div>
+
+<div class="modal-overlay" id="success-modal">
+        </div>
+
+
+    <div class="modal-overlay" id="error-modal">
+      <div class="modal-content">
+        <i class="fas fa-exclamation-triangle warning-icon"></i>
+        <h2>E-mail já Cadastrado</h2>
+        <p>Este e-mail já está em uso. Tente fazer login ou use um endereço diferente.</p>
+        <div class="modal-actions">
+            <button class="btn-secondary" id="close-error-modal">Tentar Novamente</button>
+            <button class="btn-primary" id="go-to-login">Fazer Login</button>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>
